@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Quiz Game</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--Select option-->
+        <div id="select" class="active">
+            <h2>Select any one of them:</h2>
+            <button onclick="startQuiz('easy')">Easy</button>
+            <button onclick="startQuiz('medium')">Medium</button>
+            <button onclick="startQuiz('hard')">Hard</button>
+        </div>
+        <!--INTERFACE-->
+        <div id="quiz-container" class="container">
+            <h2 id="qn-no"></h2>
+            <h2 id="qn-text"></h2>
+            <div id="options-container"></div>
+            <button id="next-btn" onclick="nextqn()" disabled>Next Question..</button>
+        </div>
+        <!--Result-->
+        <div id="result-container" class="container">
+            <h2>Quiz Completed!!!!!</h2>
+            <p>Your Score: <span id="score"></span></p>
+            <div id="result-list"></div>
+            <button onclick="restart()">Restart Quiz</button>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
